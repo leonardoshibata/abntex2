@@ -1071,7 +1071,8 @@
   \begin{center}
 
     %\vspace*{1cm}
-    {\ABNTEXchapterfont\large\imprimirautor}
+    %{\ABNTEXchapterfont\large\imprimirautor}
+    {\abntex@ifnotempty{\imprimirinstituicao} {\ABNTEXchapterfont\large\imprimirinstituicao}}
 	
     \vspace*{\fill}\vspace*{\fill}
     \begin{center}
@@ -1088,7 +1089,8 @@
        \vspace*{\fill}
     }%
 
-    {\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
+    %{\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
+    {\imprimirautor\vspace*{\fill}}
 
     {\large\imprimirorientadorRotulo~\imprimirorientador\par}
     \abntex@ifnotempty{\imprimircoorientador}{%
